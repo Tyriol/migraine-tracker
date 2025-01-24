@@ -1,0 +1,17 @@
+{
+  "name": "migraine-tracker",
+  "version": "1.0.0",
+  "description": "1. **Input Date**: Allow users to input the date of the migraine.\r 2. **Severity**: Allow users to rate the severity of the migraine (e.g., scale of 1-10).\r 3. **Location of Pain**: Allow users to describe where it hurts.\r 4. **Contributing Factors**: Allow users to input events or factors that might have contributed to the migraine.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "format": "prettier --write .",
+    "format-check": "prettier --check ."
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "prettier": "^3.4.2"
+  }
+}

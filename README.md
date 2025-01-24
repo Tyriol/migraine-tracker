@@ -16,28 +16,26 @@
 3. **Store Data**: Implement a way to store the input data (e.g., local storage, database).
 4. **Display Entries**: Create a simple interface to display the recorded entries.
 
-## Intermediate Stages
+## MVP 2: Enhanced Data Visualization
 
-### Stage 1: Enhanced Data Visualization
-
-#### Features
+### Features
 
 1. **Basic Charts**: Implement basic charts to visualize the frequency and severity of migraines over time.
 2. **Filter Entries**: Allow users to filter entries by date range, severity, and location of pain.
 
-#### Steps
+### Steps
 
 1. **Chart Integration**: Integrate a charting library (e.g., Chart.js) to display migraine data.
 2. **Filtering Mechanism**: Develop a filtering mechanism to allow users to view specific subsets of their data.
 
-### Stage 2: User Accounts and Data Sync
+## MVP 3: User Accounts and Data Sync
 
-#### Features
+### Features
 
 1. **User Authentication**: Implement user authentication to allow users to create accounts and log in.
 2. **Data Sync**: Enable data synchronization across devices.
 
-#### Steps
+### Steps
 
 1. **Authentication System**: Set up a user authentication system (e.g., using Firebase Authentication).
 2. **Data Sync Implementation**: Implement data synchronization to ensure users can access their data from multiple devices.
@@ -71,7 +69,7 @@
 - Gradually add advanced features to enhance user experience.
 - Ensure data privacy and security throughout the project.
 
-## Updated Timeline
+## Timeline
 
 1. **Week 1-2**: Complete MVP features.
 2. **Week 3-4**: Develop enhanced data visualization.

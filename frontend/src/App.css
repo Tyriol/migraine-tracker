@@ -8,3 +8,14 @@ form {
   display: flex;
   flex-direction: column;
 }
+
+.date-time {
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+}
+
+.form-input {
+  display: flex;
+  flex-direction: column;
+}

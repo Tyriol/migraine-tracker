@@ -43,7 +43,10 @@ function App() {
               <label htmlFor="medication">Medication</label>
               <textarea name="medication" rows={3}></textarea>
             </div>
-            <button onClick={() => setCount((count) => count + 1)}>
+            <button
+              className="form-submit-btn"
+              onClick={() => setCount((count) => count + 1)}
+            >
               count is {count}
             </button>
           </form>

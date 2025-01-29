@@ -1,8 +1,16 @@
 import { useState } from 'react'
+import Form from './components/Form/Form'
+import FormInput from './components/Form/FormInput/FormInput'
+
 import './App.css'
 
 function App() {
   const [count, setCount] = useState(0)
+
+  const handleFormSubmit = (e) => {
+    e.preventDefault();
+    console.log("Form Submitted");
+  }
 
   return (
     <>
@@ -12,44 +20,21 @@ function App() {
       <main>
         <div className="add-data-point">
           <h2>Add info about your migraine</h2>
-          <form>
+          <Form onSubmit={handleFormSubmit}>
             <div className="date-time">
-              <div className="form-input">
-                <label htmlFor="date">Date:</label>
-                <input
-                  type="date"
-                  name="date"
-                  defaultValue={new Date().toISOString().split('T')[0]}
-                ></input>
-              </div>
-              <div className="form-input">
-                <label htmlFor="time">Time:</label>
-                <input type="time" name="time"></input>
-              </div>
+              <FormInput 
+                label="Date"
+                name="date"
+                type="date"
+                defaultValue={new Date().toISOString().split('T')[0]}
+                />
+                <FormInput label='Time' name='time' type='time' />
             </div>
-            <div className="form-input">
-              <label htmlFor="intensity">Intensity</label>
-              <input type="range" name="intensity" min="1" max="10"></input>
-            </div>
-            <div className="form-input">
-              <label htmlFor="">Preceding Symptoms</label>
-              <textarea name="symptoms" rows={3}></textarea>
-            </div>
-            <div className="form-input">
-              <label htmlFor="triggers">Triggers</label>
-              <textarea name="triggers" rows={3}></textarea>
-            </div>
-            <div className="form-input">
-              <label htmlFor="medication">Medication</label>
-              <textarea name="medication" rows={3}></textarea>
-            </div>
-            <button
-              className="form-submit-btn"
-              onClick={() => setCount((count) => count + 1)}
-            >
-              count is {count}
-            </button>
-          </form>
+              <FormInput label="Intensity" type="range" name="intensity" min="1" max="10" />
+              <FormInput label='Preceding Symptoms' name="symptoms" type="textarea" rows={3} />
+              <FormInput label='Triggers' name="triggers" type="textarea" rows={3} />
+              <FormInput label='Medication' name="medication" type="textarea" rows={3} />
+          </Form>
         </div>
       </main>
     </>

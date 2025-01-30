@@ -1,13 +1,12 @@
-import { useState } from 'react'
+// import { useState } from 'react'
 import Form from './components/Form/Form'
 import FormInput from './components/Form/FormInput/FormInput'
 
 import './App.css'
 
 function App() {
-  const [count, setCount] = useState(0)
 
-  const handleFormSubmit = (e) => {
+  const handleFormSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     console.log("Form Submitted");
   }

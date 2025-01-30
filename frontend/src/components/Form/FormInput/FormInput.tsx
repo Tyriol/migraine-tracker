@@ -1,7 +1,8 @@
 interface FormInputProps {
     label: string,
     name: string,
-    type: string
+    type: string,
+    [key: string]: any
 }
 
 const FormInput = ({label, name, type, ...props}: FormInputProps) => {

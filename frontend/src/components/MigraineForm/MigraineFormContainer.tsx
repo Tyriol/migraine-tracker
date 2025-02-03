@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { formDataType } from "../types/types";
+import { formDataType } from "../../types/types";
 import MigraineFormPresenter from "./MigraineFormPresenter";
 
 const MigraineFormContainer = () => {

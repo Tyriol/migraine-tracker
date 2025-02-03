@@ -1,4 +1,4 @@
-import MigraineFormContainer from './components/MigraineFormContainer'
+import MigraineFormContainer from './components/MigraineForm/MigraineFormContainer'
 
 import './App.css'
 
